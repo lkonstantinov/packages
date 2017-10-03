@@ -4,35 +4,246 @@
  **********************************************************************/
 var ReactBootstrapTable = {
   "BootstrapTable": {
+    "defaultProps": {
+      "autoCollapse": {
+        "filter": {},
+        "search": {},
+        "sort": {}
+      },
+      "bodyContainerClass": {},
+      "bodyStyle": {},
+      "bordered": {},
+      "cellEdit": {
+        "afterSaveCell": {},
+        "beforeSaveCell": {},
+        "blurToEscape": {},
+        "blurToSave": {},
+        "mode": {},
+        "nonEditableRows": {}
+      },
+      "columnFilter": {},
+      "condensed": {},
+      "containerClass": {},
+      "containerStyle": {},
+      "csvFileName": {},
+      "deleteRow": {},
+      "expandColumnOptions": {
+        "expandColumnBeforeSelectColumn": {},
+        "expandColumnComponent": {},
+        "expandColumnVisible": {}
+      },
+      "expandComponent": {},
+      "expandableRow": {},
+      "exportCSV": {},
+      "fetchInfo": {
+        "dataTotalSize": {}
+      },
+      "headerContainerClass": {},
+      "headerStyle": {},
+      "height": {},
+      "hover": {},
+      "ignoreSinglePage": {},
+      "insertRow": {},
+      "keyBoardNav": {},
+      "maxHeight": {},
+      "multiColumnSearch": {},
+      "multiColumnSort": {},
+      "options": {
+        "afterColumnFilter": {},
+        "afterDeleteRow": {},
+        "afterInsertRow": {},
+        "afterSearch": {},
+        "afterTableComplete": {},
+        "alwaysShowAllBtns": {},
+        "beforeShowError": {},
+        "btnGroup": {},
+        "clearSearch": {},
+        "clearSearchBtn": {},
+        "closeText": {},
+        "defaultSearch": {},
+        "defaultSortName": {},
+        "defaultSortOrder": {},
+        "deleteBtn": {},
+        "deleteText": {},
+        "excludeCSVHeader": {},
+        "expandBodyClass": {},
+        "expandBy": {},
+        "expandParentClass": {},
+        "expandRowBgColor": {},
+        "expanding": {},
+        "exportCSVBtn": {},
+        "exportCSVSeparator": {},
+        "exportCSVText": {},
+        "firstPage": {},
+        "firstPageTitle": {},
+        "handleConfirmDeleteRow": {},
+        "hidePageListOnlyOnePage": {},
+        "hideSizePerPage": {},
+        "ignoreEditable": {},
+        "insertBtn": {},
+        "insertFailIndicator": {},
+        "insertModal": {},
+        "insertModalBody": {},
+        "insertModalFooter": {},
+        "insertModalHeader": {},
+        "insertText": {},
+        "keepSizePerPageState": {},
+        "lastPage": {},
+        "lastPageTitle": {},
+        "nextPage": {},
+        "nextPageTitle": {},
+        "noAutoBOM": {},
+        "noDataText": {},
+        "onExpand": {},
+        "onMouseEnter": {},
+        "onMouseLeave": {},
+        "onRowClick": {},
+        "onRowDoubleClick": {},
+        "onRowMouseOut": {},
+        "onRowMouseOver": {},
+        "onSizePerPageList": {},
+        "onlyOneExpanding": {},
+        "page": {},
+        "pageStartIndex": {},
+        "paginationPanel": {},
+        "paginationPosition": {},
+        "paginationShowsTotal": {},
+        "paginationSize": {},
+        "prePage": {},
+        "prePageTitle": {},
+        "printToolBar": {},
+        "saveText": {},
+        "searchDelayTime": {},
+        "searchField": {},
+        "searchPanel": {},
+        "searchPosition": {},
+        "showSelectedOnlyBtn": {},
+        "sizePerPage": {},
+        "sizePerPageDropDown": {},
+        "sizePerPageList": {},
+        "sortIndicator": {},
+        "sortName": {},
+        "sortOrder": {},
+        "toolBar": {},
+        "toolbarPosition": {},
+        "withFirstAndLast": {},
+        "withoutNoDataText": {}
+      },
+      "pagination": {},
+      "printable": {},
+      "replace": {},
+      "scrollTop": {},
+      "search": {},
+      "searchPlaceholder": {},
+      "selectRow": {
+        "bgColor": {},
+        "clickToExpand": {},
+        "clickToSelect": {},
+        "clickToSelectAndEditCell": {},
+        "customComponent": {},
+        "hideSelectColumn": {},
+        "mode": {},
+        "onSelect": {},
+        "onSelectAll": {},
+        "onlyUnselectVisible": {},
+        "selected": {},
+        "showOnlySelected": {},
+        "unselectable": {}
+      },
+      "strictSearch": {},
+      "striped": {},
+      "tableBodyClass": {},
+      "tableContainerClass": {},
+      "tableHeaderClass": {},
+      "tableStyle": {},
+      "trClassName": {},
+      "trStyle": {},
+      "version": {},
+      "withoutTabIndex": {}
+    },
     "propTypes": {
-      "keyField": {
+      "autoCollapse": {
         "isRequired": function () {}
       },
-      "height": {
+      "bodyContainerClass": {
         "isRequired": function () {}
       },
-      "maxHeight": {
-        "isRequired": function () {}
-      },
-      "data": {
-        "isRequired": function () {}
-      },
-      "remote": {
-        "isRequired": function () {}
-      },
-      "scrollTop": {
-        "isRequired": function () {}
-      },
-      "striped": {
+      "bodyStyle": {
         "isRequired": function () {}
       },
       "bordered": {
         "isRequired": function () {}
       },
-      "hover": {
+      "cellEdit": {
+        "isRequired": function () {}
+      },
+      "columnFilter": {
         "isRequired": function () {}
       },
       "condensed": {
+        "isRequired": function () {}
+      },
+      "containerClass": {
+        "isRequired": function () {}
+      },
+      "containerStyle": {
+        "isRequired": function () {}
+      },
+      "csvFileName": {
+        "isRequired": function () {}
+      },
+      "data": {
+        "isRequired": function () {}
+      },
+      "deleteRow": {
+        "isRequired": function () {}
+      },
+      "expandColumnOptions": {
+        "isRequired": function () {}
+      },
+      "expandComponent": {
+        "isRequired": function () {}
+      },
+      "expandableRow": {
+        "isRequired": function () {}
+      },
+      "exportCSV": {
+        "isRequired": function () {}
+      },
+      "fetchInfo": {
+        "isRequired": function () {}
+      },
+      "headerContainerClass": {
+        "isRequired": function () {}
+      },
+      "headerStyle": {
+        "isRequired": function () {}
+      },
+      "height": {
+        "isRequired": function () {}
+      },
+      "hover": {
+        "isRequired": function () {}
+      },
+      "ignoreSinglePage": {
+        "isRequired": function () {}
+      },
+      "insertRow": {
+        "isRequired": function () {}
+      },
+      "keyBoardNav": {
+        "isRequired": function () {}
+      },
+      "keyField": {
+        "isRequired": function () {}
+      },
+      "maxHeight": {
+        "isRequired": function () {}
+      },
+      "multiColumnSearch": {
+        "isRequired": function () {}
+      },
+      "options": {
         "isRequired": function () {}
       },
       "pagination": {
@@ -41,7 +252,16 @@ var ReactBootstrapTable = {
       "printable": {
         "isRequired": function () {}
       },
-      "keyBoardNav": {
+      "remote": {
+        "isRequired": function () {}
+      },
+      "replace": {
+        "isRequired": function () {}
+      },
+      "scrollTop": {
+        "isRequired": function () {}
+      },
+      "search": {
         "isRequired": function () {}
       },
       "searchPlaceholder": {
@@ -50,284 +270,428 @@ var ReactBootstrapTable = {
       "selectRow": {
         "isRequired": function () {}
       },
-      "cellEdit": {
+      "strictSearch": {
         "isRequired": function () {}
       },
-      "insertRow": {
-        "isRequired": function () {}
-      },
-      "deleteRow": {
-        "isRequired": function () {}
-      },
-      "search": {
-        "isRequired": function () {}
-      },
-      "columnFilter": {
-        "isRequired": function () {}
-      },
-      "trClassName": {
-        "isRequired": function () {}
-      },
-      "tableStyle": {
-        "isRequired": function () {}
-      },
-      "containerStyle": {
-        "isRequired": function () {}
-      },
-      "headerStyle": {
-        "isRequired": function () {}
-      },
-      "bodyStyle": {
-        "isRequired": function () {}
-      },
-      "containerClass": {
-        "isRequired": function () {}
-      },
-      "tableContainerClass": {
-        "isRequired": function () {}
-      },
-      "headerContainerClass": {
-        "isRequired": function () {}
-      },
-      "bodyContainerClass": {
-        "isRequired": function () {}
-      },
-      "tableHeaderClass": {
+      "striped": {
         "isRequired": function () {}
       },
       "tableBodyClass": {
         "isRequired": function () {}
       },
-      "options": {
+      "tableContainerClass": {
         "isRequired": function () {}
       },
-      "fetchInfo": {
+      "tableHeaderClass": {
         "isRequired": function () {}
       },
-      "exportCSV": {
+      "tableStyle": {
         "isRequired": function () {}
       },
-      "csvFileName": {
+      "trClassName": {
         "isRequired": function () {}
       },
-      "ignoreSinglePage": {
+      "trStyle": {
         "isRequired": function () {}
       },
-      "expandableRow": {
+      "version": {
         "isRequired": function () {}
       },
-      "expandComponent": {
-        "isRequired": function () {}
-      },
-      "expandColumnOptions": {
+      "withoutTabIndex": {
         "isRequired": function () {}
       }
-    },
-    "defaultProps": {
-      "scrollTop": {},
-      "expandComponent": {},
-      "expandableRow": {},
-      "expandColumnOptions": {
-        "expandColumnVisible": {},
-        "expandColumnComponent": {},
-        "expandColumnBeforeSelectColumn": {}
-      },
-      "height": {},
-      "maxHeight": {},
-      "striped": {},
-      "bordered": {},
-      "hover": {},
-      "condensed": {},
-      "pagination": {},
-      "printable": {},
-      "keyBoardNav": {},
-      "searchPlaceholder": {},
-      "selectRow": {
-        "mode": {},
-        "bgColor": {},
-        "selected": {},
-        "onSelect": {},
-        "onSelectAll": {},
-        "clickToSelect": {},
-        "hideSelectColumn": {},
-        "clickToSelectAndEditCell": {},
-        "clickToExpand": {},
-        "showOnlySelected": {},
-        "unselectable": {},
-        "customComponent": {}
-      },
-      "cellEdit": {
-        "mode": {},
-        "blurToSave": {},
-        "beforeSaveCell": {},
-        "afterSaveCell": {},
-        "nonEditableRows": {}
-      },
-      "insertRow": {},
-      "deleteRow": {},
-      "search": {},
-      "multiColumnSearch": {},
-      "multiColumnSort": {},
-      "columnFilter": {},
-      "trClassName": {},
-      "tableStyle": {},
-      "containerStyle": {},
-      "headerStyle": {},
-      "bodyStyle": {},
-      "containerClass": {},
-      "tableContainerClass": {},
-      "headerContainerClass": {},
-      "bodyContainerClass": {},
-      "tableHeaderClass": {},
-      "tableBodyClass": {},
-      "options": {
-        "clearSearch": {},
-        "sortName": {},
-        "sortOrder": {},
-        "defaultSortName": {},
-        "defaultSortOrder": {},
-        "sortIndicator": {},
-        "afterTableComplete": {},
-        "afterDeleteRow": {},
-        "afterInsertRow": {},
-        "afterSearch": {},
-        "afterColumnFilter": {},
-        "onRowClick": {},
-        "onRowDoubleClick": {},
-        "onMouseLeave": {},
-        "onMouseEnter": {},
-        "onRowMouseOut": {},
-        "onRowMouseOver": {},
-        "page": {},
-        "paginationShowsTotal": {},
-        "sizePerPageList": {},
-        "sizePerPage": {},
-        "paginationSize": {},
-        "paginationPosition": {},
-        "hideSizePerPage": {},
-        "hidePageListOnlyOnePage": {},
-        "alwaysShowAllBtns": {},
-        "withFirstAndLast": {},
-        "onSizePerPageList": {},
-        "noDataText": {},
-        "withoutNoDataText": {},
-        "handleConfirmDeleteRow": {},
-        "prePage": {},
-        "nextPage": {},
-        "firstPage": {},
-        "lastPage": {},
-        "prePageTitle": {},
-        "nextPageTitle": {},
-        "firstPageTitle": {},
-        "lastPageTitle": {},
-        "pageStartIndex": {},
-        "searchDelayTime": {},
-        "exportCSVText": {},
-        "insertText": {},
-        "deleteText": {},
-        "saveText": {},
-        "closeText": {},
-        "ignoreEditable": {},
-        "defaultSearch": {},
-        "insertModalHeader": {},
-        "insertModalBody": {},
-        "insertModalFooter": {},
-        "insertModal": {},
-        "insertBtn": {},
-        "deleteBtn": {},
-        "showSelectedOnlyBtn": {},
-        "exportCSVBtn": {},
-        "clearSearchBtn": {},
-        "searchField": {},
-        "searchPanel": {},
-        "btnGroup": {},
-        "toolBar": {},
-        "sizePerPageDropDown": {},
-        "paginationPanel": {},
-        "searchPosition": {},
-        "expandRowBgColor": {},
-        "expandBy": {},
-        "expanding": {},
-        "beforeShowError": {},
-        "printToolBar": {}
-      },
-      "fetchInfo": {
-        "dataTotalSize": {}
-      },
-      "exportCSV": {},
-      "csvFileName": {},
-      "ignoreSinglePage": {}
     }
   },
-  "TableHeaderColumn": {
+  "ButtonGroup": {
+    "defaultProps": {
+      "className": {},
+      "sizeClass": {}
+    },
     "propTypes": {
-      "dataField": {
+      "className": {
         "isRequired": function () {}
       },
-      "dataAlign": {
+      "sizeClass": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "ClearSearchButton": {
+    "defaultProps": {
+      "btnContextual": {},
+      "btnText": {},
+      "className": {},
+      "onClick": {}
+    },
+    "propTypes": {
+      "btnContextual": {
         "isRequired": function () {}
       },
-      "headerAlign": {
-        "isRequired": function () {}
-      },
-      "headerTitle": {
-        "isRequired": function () {}
-      },
-      "headerText": {
-        "isRequired": function () {}
-      },
-      "dataSort": {
-        "isRequired": function () {}
-      },
-      "onSort": {
-        "isRequired": function () {}
-      },
-      "dataFormat": {
-        "isRequired": function () {}
-      },
-      "csvFormat": {
-        "isRequired": function () {}
-      },
-      "csvHeader": {
-        "isRequired": function () {}
-      },
-      "isKey": {
-        "isRequired": function () {}
-      },
-      "editable": {
-        "isRequired": function () {}
-      },
-      "hidden": {
-        "isRequired": function () {}
-      },
-      "hiddenOnInsert": {
-        "isRequired": function () {}
-      },
-      "searchable": {
+      "btnText": {
         "isRequired": function () {}
       },
       "className": {
         "isRequired": function () {}
       },
-      "width": {
+      "onClick": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "DeleteButton": {
+    "defaultProps": {
+      "btnContextual": {},
+      "btnGlyphicon": {},
+      "btnText": {},
+      "className": {},
+      "onClick": {}
+    },
+    "propTypes": {
+      "btnContextual": {
         "isRequired": function () {}
       },
-      "sortFunc": {
+      "btnGlyphicon": {
         "isRequired": function () {}
       },
-      "sortFuncExtraData": {
+      "btnText": {
+        "isRequired": function () {}
+      },
+      "className": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "ExportCSVButton": {
+    "defaultProps": {
+      "btnContextual": {},
+      "btnGlyphicon": {},
+      "btnText": {},
+      "className": {},
+      "onClick": {}
+    },
+    "propTypes": {
+      "btnContextual": {
+        "isRequired": function () {}
+      },
+      "btnGlyphicon": {
+        "isRequired": function () {}
+      },
+      "btnText": {
+        "isRequired": function () {}
+      },
+      "className": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "InsertButton": {
+    "defaultProps": {
+      "btnContextual": {},
+      "btnGlyphicon": {},
+      "btnText": {},
+      "className": {},
+      "onClick": {}
+    },
+    "propTypes": {
+      "btnContextual": {
+        "isRequired": function () {}
+      },
+      "btnGlyphicon": {
+        "isRequired": function () {}
+      },
+      "btnText": {
+        "isRequired": function () {}
+      },
+      "className": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "InsertModalBody": {
+    "defaultProps": {
+      "ignoreEditable": {},
+      "validateState": {}
+    },
+    "propTypes": {
+      "columns": {
+        "isRequired": function () {}
+      },
+      "ignoreEditable": {
+        "isRequired": function () {}
+      },
+      "validateState": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "InsertModalFooter": {
+    "defaultProps": {
+      "beforeClose": {},
+      "beforeSave": {},
+      "className": {},
+      "closeBtnClass": {},
+      "closeBtnContextual": {},
+      "closeBtnText": {},
+      "saveBtnClass": {},
+      "saveBtnContextual": {},
+      "saveBtnText": {}
+    },
+    "propTypes": {
+      "beforeClose": {
+        "isRequired": function () {}
+      },
+      "beforeSave": {
+        "isRequired": function () {}
+      },
+      "className": {
+        "isRequired": function () {}
+      },
+      "closeBtnClass": {
+        "isRequired": function () {}
+      },
+      "closeBtnContextual": {
+        "isRequired": function () {}
+      },
+      "closeBtnText": {
+        "isRequired": function () {}
+      },
+      "onModalClose": {
+        "isRequired": function () {}
+      },
+      "onSave": {
+        "isRequired": function () {}
+      },
+      "saveBtnClass": {
+        "isRequired": function () {}
+      },
+      "saveBtnContextual": {
+        "isRequired": function () {}
+      },
+      "saveBtnText": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "InsertModalHeader": {
+    "defaultProps": {
+      "beforeClose": {},
+      "className": {},
+      "hideClose": {},
+      "onModalClose": {},
+      "title": {},
+      "version": {}
+    },
+    "propTypes": {
+      "beforeClose": {
+        "isRequired": function () {}
+      },
+      "className": {
+        "isRequired": function () {}
+      },
+      "hideClose": {
+        "isRequired": function () {}
+      },
+      "onModalClose": {
+        "isRequired": function () {}
+      },
+      "title": {
+        "isRequired": function () {}
+      },
+      "version": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "SearchField": {
+    "defaultProps": {
+      "className": {},
+      "defaultValue": {},
+      "onKeyUp": {},
+      "placeholder": {}
+    },
+    "propTypes": {
+      "className": {
+        "isRequired": function () {}
+      },
+      "defaultValue": {
+        "isRequired": function () {}
+      },
+      "onKeyUp": {
+        "isRequired": function () {}
+      },
+      "placeholder": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "ShowSelectedOnlyButton": {
+    "defaultProps": {
+      "btnContextual": {},
+      "className": {},
+      "onClick": {},
+      "showAllText": {},
+      "showOnlySelectText": {},
+      "toggle": {}
+    },
+    "propTypes": {
+      "btnContextual": {
+        "isRequired": function () {}
+      },
+      "className": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "showAllText": {
+        "isRequired": function () {}
+      },
+      "showOnlySelectText": {
+        "isRequired": function () {}
+      },
+      "toggle": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "SizePerPageDropDown": {
+    "defaultProps": {
+      "btnContextual": {},
+      "className": {},
+      "hidden": {},
+      "open": {},
+      "variation": {}
+    },
+    "propTypes": {
+      "btnContextual": {
+        "isRequired": function () {}
+      },
+      "className": {
+        "isRequired": function () {}
+      },
+      "currSizePerPage": {
+        "isRequired": function () {}
+      },
+      "hidden": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "open": {
+        "isRequired": function () {}
+      },
+      "options": {
+        "isRequired": function () {}
+      },
+      "variation": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "TableHeaderColumn": {
+    "defaultProps": {
+      "className": {},
+      "columnClassName": {},
+      "columnTitle": {},
+      "csvFieldType": {},
+      "csvFormat": {},
+      "csvHeader": {},
+      "dataAlign": {},
+      "dataFormat": {},
+      "dataSort": {},
+      "defaultASC": {},
+      "editColumnClassName": {},
+      "editTdAttr": {},
+      "editable": {},
+      "expandable": {},
+      "filter": {},
+      "filterFormatted": {},
+      "filterValue": {},
+      "formatExtraData": {},
+      "headerAlign": {},
+      "headerTitle": {},
+      "hidden": {},
+      "hiddenOnInsert": {},
+      "invalidEditColumnClassName": {},
+      "isKey": {},
+      "keyValidator": {},
+      "onSort": {},
+      "searchable": {},
+      "sort": {},
+      "sortFunc": {},
+      "sortFuncExtraData": {},
+      "sortIndicator": {},
+      "tdAttr": {},
+      "tdStyle": {},
+      "thStyle": {},
+      "width": {}
+    },
+    "propTypes": {
+      "caretRender": {
+        "isRequired": function () {}
+      },
+      "className": {
         "isRequired": function () {}
       },
       "columnClassName": {
         "isRequired": function () {}
       },
+      "columnTitle": {
+        "isRequired": function () {}
+      },
+      "csvFieldType": {
+        "isRequired": function () {}
+      },
+      "csvFormat": {
+        "isRequired": function () {}
+      },
+      "csvFormatExtraData": {
+        "isRequired": function () {}
+      },
+      "csvHeader": {
+        "isRequired": function () {}
+      },
+      "dataAlign": {
+        "isRequired": function () {}
+      },
+      "dataField": {
+        "isRequired": function () {}
+      },
+      "dataFormat": {
+        "isRequired": function () {}
+      },
+      "dataSort": {
+        "isRequired": function () {}
+      },
+      "defaultASC": {
+        "isRequired": function () {}
+      },
       "editColumnClassName": {
         "isRequired": function () {}
       },
-      "invalidEditColumnClassName": {
+      "editTdAttr": {
         "isRequired": function () {}
       },
-      "columnTitle": {
+      "editable": {
+        "isRequired": function () {}
+      },
+      "expandable": {
+        "isRequired": function () {}
+      },
+      "export": {
+        "isRequired": function () {}
+      },
+      "filter": {
         "isRequired": function () {}
       },
       "filterFormatted": {
@@ -336,28 +700,52 @@ var ReactBootstrapTable = {
       "filterValue": {
         "isRequired": function () {}
       },
-      "sort": {
-        "isRequired": function () {}
-      },
-      "caretRender": {
-        "isRequired": function () {}
-      },
       "formatExtraData": {
         "isRequired": function () {}
       },
-      "csvFormatExtraData": {
+      "headerAlign": {
         "isRequired": function () {}
       },
-      "filter": {
+      "headerText": {
+        "isRequired": function () {}
+      },
+      "headerTitle": {
+        "isRequired": function () {}
+      },
+      "hidden": {
+        "isRequired": function () {}
+      },
+      "hiddenOnInsert": {
+        "isRequired": function () {}
+      },
+      "invalidEditColumnClassName": {
+        "isRequired": function () {}
+      },
+      "isKey": {
+        "isRequired": function () {}
+      },
+      "keyValidator": {
+        "isRequired": function () {}
+      },
+      "onSort": {
+        "isRequired": function () {}
+      },
+      "searchable": {
+        "isRequired": function () {}
+      },
+      "sort": {
+        "isRequired": function () {}
+      },
+      "sortFunc": {
+        "isRequired": function () {}
+      },
+      "sortFuncExtraData": {
+        "isRequired": function () {}
+      },
+      "sortHeaderColumnClassName": {
         "isRequired": function () {}
       },
       "sortIndicator": {
-        "isRequired": function () {}
-      },
-      "export": {
-        "isRequired": function () {}
-      },
-      "expandable": {
         "isRequired": function () {}
       },
       "tdAttr": {
@@ -368,399 +756,77 @@ var ReactBootstrapTable = {
       },
       "thStyle": {
         "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "dataAlign": {},
-      "headerAlign": {},
-      "headerTitle": {},
-      "dataSort": {},
-      "dataFormat": {},
-      "csvFormat": {},
-      "csvHeader": {},
-      "isKey": {},
-      "editable": {},
-      "onSort": {},
-      "hidden": {},
-      "hiddenOnInsert": {},
-      "searchable": {},
-      "className": {},
-      "columnTitle": {},
-      "width": {},
-      "sortFunc": {},
-      "columnClassName": {},
-      "editColumnClassName": {},
-      "invalidEditColumnClassName": {},
-      "filterFormatted": {},
-      "filterValue": {},
-      "sort": {},
-      "formatExtraData": {},
-      "sortFuncExtraData": {},
-      "filter": {},
-      "sortIndicator": {},
-      "expandable": {},
-      "tdAttr": {},
-      "tdStyle": {},
-      "thStyle": {}
-    }
-  },
-  "InsertModalHeader": {
-    "propTypes": {
-      "className": {
-        "isRequired": function () {}
       },
-      "title": {
-        "isRequired": function () {}
-      },
-      "onModalClose": {
-        "isRequired": function () {}
-      },
-      "hideClose": {
-        "isRequired": function () {}
-      },
-      "beforeClose": {
+      "width": {
         "isRequired": function () {}
       }
-    },
-    "defaultProps": {
-      "className": {},
-      "title": {},
-      "onModalClose": {},
-      "hideClose": {},
-      "beforeClose": {}
-    }
-  },
-  "InsertModalBody": {
-    "propTypes": {
-      "columns": {
-        "isRequired": function () {}
-      },
-      "validateState": {
-        "isRequired": function () {}
-      },
-      "ignoreEditable": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "validateState": {},
-      "ignoreEditable": {}
-    }
-  },
-  "InsertModalFooter": {
-    "propTypes": {
-      "className": {
-        "isRequired": function () {}
-      },
-      "saveBtnText": {
-        "isRequired": function () {}
-      },
-      "closeBtnText": {
-        "isRequired": function () {}
-      },
-      "closeBtnContextual": {
-        "isRequired": function () {}
-      },
-      "saveBtnContextual": {
-        "isRequired": function () {}
-      },
-      "closeBtnClass": {
-        "isRequired": function () {}
-      },
-      "saveBtnClass": {
-        "isRequired": function () {}
-      },
-      "beforeClose": {
-        "isRequired": function () {}
-      },
-      "beforeSave": {
-        "isRequired": function () {}
-      },
-      "onSave": {
-        "isRequired": function () {}
-      },
-      "onModalClose": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "className": {},
-      "saveBtnText": {},
-      "closeBtnText": {},
-      "closeBtnContextual": {},
-      "saveBtnContextual": {},
-      "closeBtnClass": {},
-      "saveBtnClass": {},
-      "beforeClose": {},
-      "beforeSave": {}
-    }
-  },
-  "InsertButton": {
-    "propTypes": {
-      "btnText": {
-        "isRequired": function () {}
-      },
-      "btnContextual": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "onClick": {
-        "isRequired": function () {}
-      },
-      "btnGlyphicon": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "btnText": {},
-      "btnContextual": {},
-      "className": {},
-      "onClick": {},
-      "btnGlyphicon": {}
-    }
-  },
-  "DeleteButton": {
-    "propTypes": {
-      "btnText": {
-        "isRequired": function () {}
-      },
-      "btnContextual": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "onClick": {
-        "isRequired": function () {}
-      },
-      "btnGlyphicon": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "btnText": {},
-      "btnContextual": {},
-      "className": {},
-      "onClick": {},
-      "btnGlyphicon": {}
-    }
-  },
-  "ShowSelectedOnlyButton": {
-    "propTypes": {
-      "showAllText": {
-        "isRequired": function () {}
-      },
-      "showOnlySelectText": {
-        "isRequired": function () {}
-      },
-      "toggle": {
-        "isRequired": function () {}
-      },
-      "btnContextual": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "onClick": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "showAllText": {},
-      "showOnlySelectText": {},
-      "toggle": {},
-      "btnContextual": {},
-      "className": {},
-      "onClick": {}
-    }
-  },
-  "ExportCSVButton": {
-    "propTypes": {
-      "btnText": {
-        "isRequired": function () {}
-      },
-      "btnContextual": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "onClick": {
-        "isRequired": function () {}
-      },
-      "btnGlyphicon": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "btnText": {},
-      "btnContextual": {},
-      "className": {},
-      "onClick": {},
-      "btnGlyphicon": {}
-    }
-  },
-  "ClearSearchButton": {
-    "propTypes": {
-      "btnContextual": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "btnText": {
-        "isRequired": function () {}
-      },
-      "onClick": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "btnContextual": {},
-      "className": {},
-      "btnText": {},
-      "onClick": {}
-    }
-  },
-  "SearchField": {
-    "propTypes": {
-      "className": {
-        "isRequired": function () {}
-      },
-      "defaultValue": {
-        "isRequired": function () {}
-      },
-      "placeholder": {
-        "isRequired": function () {}
-      },
-      "onKeyUp": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "className": {},
-      "defaultValue": {},
-      "placeholder": {},
-      "onKeyUp": {}
-    }
-  },
-  "ButtonGroup": {
-    "propTypes": {
-      "sizeClass": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "sizeClass": {},
-      "className": {}
-    }
-  },
-  "SizePerPageDropDown": {
-    "propTypes": {
-      "open": {
-        "isRequired": function () {}
-      },
-      "hidden": {
-        "isRequired": function () {}
-      },
-      "btnContextual": {
-        "isRequired": function () {}
-      },
-      "currSizePerPage": {
-        "isRequired": function () {}
-      },
-      "options": {
-        "isRequired": function () {}
-      },
-      "variation": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "onClick": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "open": {},
-      "hidden": {},
-      "btnContextual": {},
-      "variation": {},
-      "className": {}
     }
   }
 };
 ReactBootstrapTable.BootstrapTable.prototype = {
+  "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactBootstrapTable.TableHeaderColumn.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactBootstrapTable.InsertModalHeader.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactBootstrapTable.InsertModalBody.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactBootstrapTable.InsertModalFooter.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactBootstrapTable.InsertButton.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactBootstrapTable.DeleteButton.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactBootstrapTable.ShowSelectedOnlyButton.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactBootstrapTable.ExportCSVButton.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactBootstrapTable.ClearSearchButton.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactBootstrapTable.SearchField.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
+  "setState": function () {}
 };
 ReactBootstrapTable.ButtonGroup.prototype = {
+  "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
+  "setState": function () {}
+};
+ReactBootstrapTable.ClearSearchButton.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+ReactBootstrapTable.DeleteButton.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+ReactBootstrapTable.ExportCSVButton.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+ReactBootstrapTable.InsertButton.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+ReactBootstrapTable.InsertModalBody.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+ReactBootstrapTable.InsertModalFooter.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+ReactBootstrapTable.InsertModalHeader.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+ReactBootstrapTable.SearchField.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+ReactBootstrapTable.ShowSelectedOnlyButton.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 ReactBootstrapTable.SizePerPageDropDown.prototype = {
+  "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
+  "setState": function () {}
+};
+ReactBootstrapTable.TableHeaderColumn.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 /**********************************************************************
  * End Generated Extern for ReactBootstrapTable
