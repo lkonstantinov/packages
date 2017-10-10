@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/rc-slider "4.0.1-0"] ;; latest release
+[cljsjs/rc-slider "8.3.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -13,6 +13,8 @@ you can require the packaged library like so:
 ```clojure
 (ns application.core
   (:require cljsjs.rc-slider))
+
+(def slider (aget js/RcSlider "default"))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
