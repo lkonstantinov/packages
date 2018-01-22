@@ -1,7 +1,8 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]
-                  [cljsjs/react "15.6.2-0"]
+                  [cljsjs/react "15.6.2-4"]
+				  [cljsjs/react-dom "15.6.2-4"]
                   [cljsjs/react-input-autosize "2.0.0-1"]
                   [cljsjs/react-onclickoutside "5.9.0-0"]
                   [cljsjs/prop-types "15.5.10-0"]
@@ -13,7 +14,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [dosh]])
 
-(def +lib-version+ "1.4.2")
+(def +lib-version+ "2.2.0")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "react-bootstrap-typeahead-%s" +lib-version+))
 
@@ -27,7 +28,7 @@
 
 (deftask download-src []
   (download :url (format "https://github.com/ericgio/react-bootstrap-typeahead/archive/v%s.zip" +lib-version+)
-            :checksum "EB93B9E67031A08D5476F2831442BFC2"
+            :checksum "1C8203D2CE90E83C8A4C9B7B5B3033A5"
             :unzip true))
 
 (deftask build []
@@ -63,6 +64,11 @@
                 (re-pattern (str "^" +lib-folder+ "/css/(.*)")) "cljsjs/react-bootstrap-typeahead/common/$1"})
 
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.react-bootstrap-typeahead" :requires ["cljsjs.react"])
+   (deps-cljs :name "cljsjs.react-bootstrap-typeahead" :requires ["cljsjs.react"
+																  "cljsjs.react-dom"
+																  "cljsjs.react-input-autosize"
+																  "cljsjs.react-onclickoutside"
+																  "cljsjs.proptypes"
+																  "cljsjs.classnames"])
    (pom)
    (jar)))

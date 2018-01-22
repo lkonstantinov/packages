@@ -5,7 +5,7 @@ cljsjs/ag-grid:
 
 [](dependency)
 ```clojure
-[cljsjs/ag-grid "13.0.1-0"] ;; latest release
+[cljsjs/ag-grid "15.0.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -18,7 +18,7 @@ you can require the packaged library like:
   (:require [cljsjs.ag-grid]))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 ## Upgrading
 

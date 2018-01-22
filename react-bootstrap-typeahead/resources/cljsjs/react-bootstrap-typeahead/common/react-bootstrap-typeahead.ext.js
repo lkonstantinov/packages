@@ -16,6 +16,7 @@ var ReactBootstrapTypeahead = {
       "delay": {
         "isRequired": function () {}
       },
+      "isLoading": function () {},
       "onSearch": function () {},
       "options": {
         "isRequired": function () {}
@@ -31,12 +32,21 @@ var ReactBootstrapTypeahead = {
       }
     }
   },
+  "Highlighter": {
+    "propTypes": {
+      "children": function () {},
+      "search": function () {}
+    }
+  },
   "Menu": {
-    "PropTypes": {
+    "defaultProps": {
+      "align": {},
+      "maxHeight": {},
+      "paginate": {},
+      "paginationText": {}
+    },
+    "propTypes": {
       "align": {
-        "isRequired": function () {}
-      },
-      "emptyLabel": {
         "isRequired": function () {}
       },
       "maxHeight": {
@@ -45,18 +55,12 @@ var ReactBootstrapTypeahead = {
       "paginationText": {
         "isRequired": function () {}
       }
-    },
-    "defaultProps": {
-      "align": {},
-      "emptyLabel": {},
-      "maxHeight": {},
-      "paginate": {},
-      "paginationText": {}
     }
   },
   "MenuItem": {
     "contextTypes": {
       "activeIndex": function () {},
+      "isOnlyResult": function () {},
       "onActiveItemChange": function () {},
       "onInitialItemChange": function () {},
       "onMenuItemClick": function () {}
@@ -71,29 +75,36 @@ var ReactBootstrapTypeahead = {
   },
   "Token": {
     "defaultProps": {
-      "excludeScrollbar": {}
+      "eventTypes": {},
+      "excludeScrollbar": {},
+      "outsideClickIgnoreClass": {},
+      "preventDefault": {},
+      "stopPropagation": {}
     },
     "displayName": {},
-    "getClass": function () {},
-    "getDefaultProps": {
-      "isReactClassApproved": {}
-    }
+    "getClass": function () {}
   },
   "Typeahead": {
     "defaultProps": {
-      "excludeScrollbar": {}
+      "eventTypes": {},
+      "excludeScrollbar": {},
+      "outsideClickIgnoreClass": {},
+      "preventDefault": {},
+      "stopPropagation": {}
     },
     "displayName": {},
-    "getClass": function () {},
-    "getDefaultProps": {
-      "isReactClassApproved": {}
-    }
+    "getClass": function () {}
   },
   "asyncContainer": function () {},
   "menuItemContainer": function () {},
   "tokenContainer": function () {}
 };
 ReactBootstrapTypeahead.AsyncTypeahead.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+ReactBootstrapTypeahead.Highlighter.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -109,64 +120,26 @@ ReactBootstrapTypeahead.MenuItem.prototype = {
   "setState": function () {}
 };
 ReactBootstrapTypeahead.Token.prototype = {
-  "__outsideClickHandler": function () {},
-  "__reactAutoBindPairs": function () {},
-  "childContextTypes": function () {},
   "componentDidMount": function () {},
   "componentDidUpdate": function () {},
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
   "componentWillUnmount": function () {},
-  "componentWillUpdate": function () {},
   "constructor": function () {},
-  "contextTypes": function () {},
-  "disableOnClickOutside": function () {},
-  "enableOnClickOutside": function () {},
   "forceUpdate": function () {},
-  "getChildContext": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
   "getInstance": function () {},
-  "isMounted": function () {},
   "isReactComponent": function () {},
-  "mixins": function () {},
-  "propTypes": function () {},
   "render": function () {},
-  "replaceState": function () {},
-  "setState": function () {},
-  "shouldComponentUpdate": function () {},
-  "statics": function () {},
-  "updateComponent": function () {}
+  "setState": function () {}
 };
 ReactBootstrapTypeahead.Typeahead.prototype = {
-  "__outsideClickHandler": function () {},
-  "__reactAutoBindPairs": function () {},
-  "childContextTypes": function () {},
   "componentDidMount": function () {},
   "componentDidUpdate": function () {},
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
   "componentWillUnmount": function () {},
-  "componentWillUpdate": function () {},
   "constructor": function () {},
-  "contextTypes": function () {},
-  "disableOnClickOutside": function () {},
-  "enableOnClickOutside": function () {},
   "forceUpdate": function () {},
-  "getChildContext": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
   "getInstance": function () {},
-  "isMounted": function () {},
   "isReactComponent": function () {},
-  "mixins": function () {},
-  "propTypes": function () {},
   "render": function () {},
-  "replaceState": function () {},
-  "setState": function () {},
-  "shouldComponentUpdate": function () {},
-  "statics": function () {},
-  "updateComponent": function () {}
+  "setState": function () {}
 };
 /**********************************************************************
  * End Generated Extern for ReactBootstrapTypeahead

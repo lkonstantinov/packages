@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/accounting "0.4.1-0"] ;; latest release
+[cljsjs/accounting "0.4.1-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -18,11 +18,11 @@ you can require the packaged library like so:
 
 (defn format-money [number]
   (.formatMoney js/accounting number))
-  
+
 (format-money 12345)  ;; $12,345.00
-  
+
 ```
 
 
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

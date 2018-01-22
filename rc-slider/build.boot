@@ -1,8 +1,8 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]
-                  [cljsjs/react "15.5.4-0"]
-                  [cljsjs/react-dom "15.5.4-0"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
+                  [cljsjs/react "15.3.0-0"]
+                  [cljsjs/react-dom "15.3.0-0"]
                   [cljsjs/classnames "2.2.3-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
@@ -11,7 +11,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "8.3.1")
+(def +lib-version+ "4.0.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -23,7 +23,7 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (defn- cmd [x]
-  (cond-> x
+  (cond-> x 
           (re-find #"^Windows" (.get (System/getProperties) "os.name")) (str ".cmd")))
 
 (defn- path [x]
@@ -39,18 +39,19 @@
           (io/make-parents target)
           (io/copy (tmpd/file f) target)))
       (io/copy
-          (io/file tmp "package.json")
-          (io/file tmp +lib-folder+ "package.json"))
+        (io/file tmp "build/webpack.config.js")
+        (io/file tmp +lib-folder+ "webpack-cljsjs.config.js"))
       (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
-        ((sh (cmd "npm") "install"))
-        ((sh (cmd "npm") "run" "build"))
-        ((sh (cmd "npm") "run" "dist")))
+        ((sh (cmd "npm") "install" "--production"))
+        ((sh (cmd "npm") "install" "react" "react-dom" "webpack" "babel-loader" "babel-core" "babel-preset-react" "babel-preset-es2015" "babel-preset-stage-0" "babel-plugin-add-module-exports" "less"))
+        ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/webpack"))) "--config" "webpack-cljsjs.config.js"))
+        ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/lessc"))) "assets/index.less" ">" "rc-slider.css")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
   (comp
     (download :url (str "https://github.com/react-component/slider/archive/" +lib-version+ ".zip")
-              :checksum "846BDC3D750FB2D7D99D1139611ECD67"
+              :checksum "a1da3d2fbe0509beb4915cd092ceeebb"
               :unzip true)
     (build)
     (sift :move {#".*rc-slider.js" "cljsjs/rc-slider/development/rc-slider.inc.js"

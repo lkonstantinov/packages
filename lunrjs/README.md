@@ -4,7 +4,7 @@ This is a cljsjs package for https://github.com/olivernn/lunr.js
 
 [](dependency)
 ```clojure
-[cljsjs/lunrjs "0.6.0-1"] ;; latest release
+[cljsjs/lunrjs "2.1.5-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,9 +15,9 @@ you can require the packaged library like so:
 ```clojure
 (ns application.core
   (:require cljsjs.lunrjs))
-  
+
 ;; call lunr rather than lunrjs
-(js/lunr (fn [] ...)) 
+(js/lunr (fn [] ...))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

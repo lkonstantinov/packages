@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-number-format "v2.0.0-alpha2-0"] ;; latest release
+[cljsjs/react-number-format "3.0.0-beta2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.react-number-format))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
